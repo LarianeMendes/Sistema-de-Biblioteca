@@ -5,6 +5,7 @@ Um sistema de biblioteca é uma plataforma que facilita a gestão de uma bibliot
 
 ### Classe Bibliotecário
 
+\\ A classe Bibliotécrio é responsavel por gerenciar as operações da biblioteca; ela fornece métodos para cadastrar, devolver, emprestar, atualizar e pesquisar livros e usuários.
 `bibliotecario.hpp`
 
 ```c++
