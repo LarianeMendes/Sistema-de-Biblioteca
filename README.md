@@ -32,19 +32,13 @@ public:
     void realizarPesquisa(ControleAcervo& acervo, Usuario& usuario, Pesquisa& pesquisa);
 };
 
-#endif // BIBLIOTECARIO_HPP
-```
-
-`bibliotecario.cpp`
-
-```c++
+#endif // `BIBLIOTECARIO.CPP`
 
 #include "Bibliotecario.hpp"
-#include "Bibliotecario.hpp"
-#include "ControleEmprestimo.hpp"  
-#include "Pesquisa.hpp"  
+#include "ControleEmprestimo.hpp"
+#include "Pesquisa.hpp"
 
-void Bibliotecario::cadastrarLivro(ControleAcervo& acervo) {
+void Bibliotecario::cadastrarLivro(ControleAcervo &acervo) {
     std::string titulo, autor, edicao, editora, sinopse, categoria;
     int numPaginas;
 
@@ -76,35 +70,37 @@ void Bibliotecario::cadastrarLivro(ControleAcervo& acervo) {
     std::cout << "Livro cadastrado com sucesso!" << std::endl;
 }
 
-void Bibliotecario::cadastrarUsuario(Usuario& usuario) {
+void Bibliotecario::cadastrarUsuario(Usuario &usuario) {
+    // Implemente a lógica de cadastro de usuário aqui, se necessário.
 }
 
-void Bibliotecario::realizarEmprestimo(ControleAcervo& acervo, ControleEmprestimo& controleEmprestimo, Usuario& usuario) {
+void Bibliotecario::realizarEmprestimo(ControleAcervo &acervo, ControleEmprestimo &controleEmprestimo, Usuario &usuario) {
     // Supondo que você tenha um livro disponível no acervo
-    Livro livro = acervo.obterLivroDisponivel();
-    
+    Livro livroDisponivel = acervo.obterLivroDisponivel();
+
     // Chame a função registrarEmprestimo com o livro obtido
-    controleEmprestimo.registrarEmprestimo(livro, usuario, acervo);    
-	
+    controleEmprestimo.registrarEmprestimo(livroDisponivel, usuario, acervo);
+
     // Supondo que o usuário já esteja cadastrado
     std::string codigoLivro;
     std::cout << "Digite o código do livro a ser emprestado: ";
     std::cin >> codigoLivro;
 
     // Encontrar o livro no acervo
-    Livro livro = acervo.buscarLivroPorCodigo(codigoLivro);
+    Livro livroEmprestimo = acervo.buscarLivroPorCodigo(codigoLivro);
 
     // Realizar empréstimo
-    controleEmprestimo.registrarEmprestimo(acervo, usuario, livro);
+    controleEmprestimo.registrarEmprestimo(acervo, usuario, livroEmprestimo);
 
     std::cout << "Empréstimo realizado com sucesso!" << std::endl;
 }
-void Bibliotecario::realizarDevolucao(ControleAcervo& acervo, ControleEmprestimo& controleEmprestimo, Usuario& usuario) {
+
+void Bibliotecario::realizarDevolucao(ControleAcervo &acervo, ControleEmprestimo &controleEmprestimo, Usuario &usuario) {
     // Supondo que você tenha um livro emprestado pelo usuário
-    Livro livro = controleEmprestimo.obterLivroEmprestado(usuario);
-    
+    Livro livroEmprestado = controleEmprestimo.obterLivroEmprestado(usuario);
+
     // Chame a função registrarDevolucao com o livro obtido
-    controleEmprestimo.registrarDevolucao(livro, usuario, acervo);
+    controleEmprestimo.registrarDevolucao(livroEmprestado, usuario, acervo);
 
     // Supondo que o usuário já tenha livros emprestados
     std::string codigoLivro;
@@ -112,14 +108,13 @@ void Bibliotecario::realizarDevolucao(ControleAcervo& acervo, ControleEmprestimo
     std::cin >> codigoLivro;
 
     // Encontrar o livro no acervo
-    Livro livro = acervo.buscarLivroPorCodigo(codigoLivro);
+    Livro livroDevolucao = acervo.buscarLivroPorCodigo(codigoLivro);
 
     // Realizar devolução
-    controleEmprestimo.registrarDevolucao(acervo, usuario, livro);
+    controleEmprestimo.registrarDevolucao(acervo, usuario, livroDevolucao);
 
     std::cout << "Devolução realizada com sucesso!" << std::endl;
 }
-```
 
 ### Classe Controle de Acervo
 
