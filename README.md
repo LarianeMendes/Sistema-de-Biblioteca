@@ -686,6 +686,7 @@ int main() {
 	Livro livro8("415STU", "Poesias do Coração", "Poeta Sensível", "1ª Edição", "Editora Versos Livres", "Sinopse do Livro", 180, "Poesia");
 	Livro livro9("161VWX", "Segredos do Passado", "Historiador Misterioso", "2ª Edição", "Editora Enigmas", "Sinopse do Livro", 250, "História");
 	Livro livro10("718YZA", "A Arte da Fotografia", "Fotógrafo Talentoso", "1ª Edição", "Editora Imagens Perfeitas", "Sinopse do Livro", 220, "Arte");
+	Livro livro11("192BCD", "Viagem ao Centro da Terra", "Aventureiro Intrépido", "1ª Edição", "Editora Explorando", "Sinopse do Livro", 280, "Aventura");
 
 
 
