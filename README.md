@@ -524,6 +524,8 @@ void exibirResultados(const std::vector<Livro>& resultados) {
 
 ### Classe Pesquisa
 
+Uma Classe Pesquisa é uma parte essencial do nosso sistema de biblioteca, oferecendo uma funcionalidade robusta para encontrar livros dentro do vasto acervo da biblioteca. Seu principal objetivo é simplificar o processo de busca, permitindo que usuários, bibliotecários e outros específicos encontrem rapidamente obras específicas com base em diferentes critérios.
+
 `Pesquisa.hpp`
 
 ```c++
@@ -569,6 +571,8 @@ std::vector<Livro> Pesquisa::pesquisarPorGenero(const std::string& genero, const
 ```
 
 ### Classe Usuário
+
+A Classe Usuário desempenha um papel essencial no contexto do nosso sistema de biblioteca. Esta classe é responsável por representar os usuários que interagem com a biblioteca, como alunos, professores ou qualquer pessoa que deseje utilizar os serviços oferecidos.
 
 `Usuario.hpp`
 
