@@ -261,6 +261,8 @@ void ControleAcervo::realizarPesquisaPorAutor(const std::string& autor) const {
 
 ### Classe Controle de Empréstimo
 
+A classe Controle de Empréstimo, assim, desempenha um papel crucial na garantia de que os recursos da biblioteca, representados pelos livros, sejam gerenciados de forma detalhada. Seu funcionamento eficiente contribui para a satisfação dos usuários, garantindo que os livros sejam disponibilizados quando necessário e promovendo um ciclo saudável de empréstimo e devolução.
+
 `ControleEmprestimo.hpp`
 
 ```c++
