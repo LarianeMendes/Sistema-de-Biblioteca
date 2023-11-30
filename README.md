@@ -115,8 +115,19 @@ void Bibliotecario::realizarDevolucao(ControleAcervo &acervo, ControleEmprestimo
 
     std::cout << "Devolução realizada com sucesso!" << std::endl;
 }
+```
 
 ### Classe Controle de Acervo
+
+A classe ControleAcervo é responsável pelo gerenciamento do acervo de uma biblioteca. Ela fornece métodos para armazenar, buscar, emprestar, devolver e pesquisar livros.
+
+Os métodos armazenarLivro e buscarLivroPorCodigo são responsáveis pelo gerenciamento do acervo de livros. O método armazenarLivro adiciona um livro ao acervo, enquanto o método buscarLivroPorCodigo retorna um livro do acervo pelo código.
+
+Os métodos registrarEmprestimo e registrarDevolucao são responsáveis pelo gerenciamento de empréstimos. O método registrarEmprestimo registra um empréstimo de um livro, enquanto o método registrarDevolucao registra a devolução de um livro.
+
+Os métodos realizarPesquisaPorTitulo e realizarPesquisaPorAutor permitem que os usuários pesquisem livros no acervo. O método realizarPesquisaPorTitulo retorna os livros do acervo que possuem o título especificado, enquanto o método realizarPesquisaPorAutor retorna os livros do acervo que possuem o autor especificado.
+
+A classe ControleAcervo é uma classe essencial para o funcionamento de uma biblioteca. Ela permite que os bibliotecários gerenciam o acervo de forma eficiente e eficaz, atendendo às necessidades dos usuários.
 
 `ControleAcervo.hpp`
 
