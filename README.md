@@ -676,12 +676,14 @@ int main() {
 //Livro//
 
     // Exemplo de criação de livros
-Livro livro1("123ABC", "Aventuras no Mundo da Programação", "Autor Exemplo", "1ª Edição", "Editora Livro Bom", "Sinopse do Livro", 200, "Programação");
-Livro livro2("456DEF", "Introdução à Inteligência Artificial", "Autor AI", "3ª Edição", "Editora Tech AI", "Sinopse de AI", 300, "Inteligência Artificial");
-Livro livro3("456DEF", "História Fascinante", "Escritor Imaginário", "2ª Edição", "Editora História Viva", "Sinopse do Livro", 250, "História");
-Livro livro4("789GHI", "O Mistério do Universo", "Autor Desconhecido", "3ª Edição", "Editora Astral", "Sinopse do Livro", 180, "Ciências");
-Livro livro5("101JKL", "Amor nas Estrelas", "Romancista Sonhador", "1ª Edição", "Editora Romances Eternos", "Sinopse do Livro", 300, "Romance");
-
+	Livro livro1("123ABC", "Aventuras no Mundo da Programação", "Autor Exemplo", "1ª Edição", "Editora Livro Bom", "Sinopse do Livro", 200, "Programação");
+	Livro livro2("456DEF", "Introdução à Inteligência Artificial", "Autor AI", "3ª Edição", "Editora Tech AI", "Sinopse de AI", 300, "Inteligência Artificial");
+	Livro livro3("456DEF", "História Fascinante", "Escritor Imaginário", "2ª Edição", "Editora História Viva", "Sinopse do Livro", 250, "História");
+	Livro livro4("789GHI", "O Mistério do Universo", "Autor Desconhecido", "3ª Edição", "Editora Astral", "Sinopse do Livro", 180, "Ciências");
+	Livro livro5("101JKL", "Amor nas Estrelas", "Romancista Sonhador", "1ª Edição", "Editora Romances Eternos", "Sinopse do Livro", 300, "Romance");
+	Livro livro6("112MNO", "Aventuras na Selva", "Aventureiro Intrépido", "2ª Edição", "Editora Explorando", "Sinopse do Livro", 220, "Aventura");
+	Livro livro7("131PQR", "Receitas do Mundo", "Chef Renomado", "3ª Edição", "Editora Gastronomia Global", "Sinopse do Livro", 150, "Culinária");
+	Livro livro8("415STU", "Poesias do Coração", "Poeta Sensível", "1ª Edição", "Editora Versos Livres", "Sinopse do Livro", 180, "Poesia");
 
 
     // Exemplo de exibição de informações dos livros
