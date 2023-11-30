@@ -696,6 +696,18 @@ int main() {
     livro1.mostrarInformacoes();
     std::cout << "\nInformações do Livro 2:\n";
     livro2.mostrarInformacoes();
+    std::cout << "\nInformações do Livro 3:\n";
+    livro3.mostrarInformacoes();
+    std::cout << "\nInformações do Livro 4:\n";
+    livro4.mostrarInformacoes();
+    std::cout << "\nInformações do Livro 5:\n";
+    livro5.mostrarInformacoes();
+    std::cout << "\nInformações do Livro 6:\n";
+    livro6.mostrarInformacoes();
+    std::cout << "\nInformações do Livro 7:\n";
+    livro7.mostrarInformacoes();
+    std::cout << "\nInformações do Livro 8:\n";
+    livro8.mostrarInformacoes();
 
     // Exemplo de atualização de informações do livro
     livro1.atualizarTitulo("Aventuras no Mundo da Programação - Edição Atualizada");
