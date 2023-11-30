@@ -804,9 +804,13 @@ void exibirResultados(const std::vector<Livro>& resultados){
 	}
 	
     // Criar objeto ControleAcervo e adicionar os livros ao acervo
-    ControleAcervo controleAcervo;
-    controleAcervo.armazenarLivro(livro1);
-    controleAcervo.armazenarLivro(livro2);
+	ControleAcervo controleAcervo;
+	controleAcervo.armazenarLivro(livro1);
+	controleAcervo.armazenarLivro(livro2);
+	controleAcervo.armazenarLivro(livro3);
+	controleAcervo.armazenarLivro(livro4);
+	controleAcervo.armazenarLivro(livro5);
+
  
 
     // Criar objeto Pesquisa
