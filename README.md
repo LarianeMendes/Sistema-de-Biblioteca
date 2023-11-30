@@ -641,7 +641,7 @@ void Usuario::adicionarHistorico(const std::string& codigoLivro, const std::stri
 }
 ```
 
-## Principal
+## MAIN
 
 `main.cpp`
 
