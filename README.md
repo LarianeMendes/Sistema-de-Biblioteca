@@ -741,6 +741,12 @@ int main() {
 	controleAcervo.armazenarLivro(livro3);
 	controleAcervo.armazenarLivro(livro4);
 	controleAcervo.armazenarLivro(livro5);
+	controleAcervo.armazenarLivro(livro6);
+	controleAcervo.armazenarLivro(livro7);
+	controleAcervo.armazenarLivro(livro8);
+	controleAcervo.armazenarLivro(livro9);
+	controleAcervo.armazenarLivro(livro10);
+	controleAcervo.armazenarLivro(livro11);
 
     // Exemplo de busca de livro por código
     Livro livroEncontrado = acervo.buscarLivroPorCodigo("123ABC");
@@ -813,6 +819,12 @@ void exibirResultados(const std::vector<Livro>& resultados){
 	controleAcervo.armazenarLivro(livro3);
 	controleAcervo.armazenarLivro(livro4);
 	controleAcervo.armazenarLivro(livro5);
+	controleAcervo.armazenarLivro(livro6);
+	controleAcervo.armazenarLivro(livro7);
+	controleAcervo.armazenarLivro(livro8);
+	controleAcervo.armazenarLivro(livro9);
+	controleAcervo.armazenarLivro(livro10);
+	controleAcervo.armazenarLivro(livro11);
 
  
 
