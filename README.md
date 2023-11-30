@@ -864,5 +864,6 @@ void exibirResultados(const std::vector<Livro>& resultados) {
         }
     }
 }
+	return 0;
 }
 ```
