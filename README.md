@@ -14,7 +14,7 @@ O sistema não é estático; é dinâmico e adaptável. À medida que novos livr
 A experiência do usuário é aprimorada pela interface amigável, possibilitando navegação intuitiva e rápida. O sistema se torna uma ferramenta não apenas para o aprendizado formal, mas também para a descoberta autônoma. A biblioteca digital transcende as barreiras físicas, permitindo que usuários explorem o mundo do conhecimento de qualquer lugar, a qualquer momento.
 
 
-## Classes
+## Classes do Projeto
 A classe Bibliotecario é responsável por gerenciar as operações de uma biblioteca. Ela fornece métodos para cadastrar, atualizar, emprestar, devolver e pesquisar livros e usuários.
 
 ### Classe Bibliotecário
