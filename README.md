@@ -19,7 +19,7 @@ A classe Bibliotecario é responsável por gerenciar as operações de uma bibli
 
 ### Classe Bibliotecário
 
-Os métodos cadastrar livro e cadastrar usuário permitem que o bibliotecário insira novas informações no acervo da biblioteca. Os métodos atualizar informações do livro e atualizar informações do usuário permitem que o bibliotecário altere informações existentes. Os métodos fazer empréstimo e fazer devolução permitem que o bibliotecário gerencie o empréstimo de livros. O método fazer pesquisa permite que o bibliotecário pesquise livros no acervo da biblioteca.
+Na Classe Bibliotecário, os métodos de cadastro de livro e cadastro de usuário possibilitam ao bibliotecário inserir novas informações no acervo da biblioteca. Da mesma forma, os métodos para atualizar informações do livro e do usuário oferecem a flexibilidade necessária para que o bibliotecário faça modificações quando necessário. No âmbito de gerenciamento de empréstimos, os métodos de fazer empréstimo e fazer devolução capacitam o bibliotecário a administrar eficientemente a circulação de livros.
 
 `bibliotecario.hpp`
 
@@ -633,7 +633,7 @@ void Usuario::adicionarHistorico(const std::string& codigoLivro, const std::stri
 }
 ```
 
-## Execução
+## Principal
 
 `main.cpp`
 
@@ -652,8 +652,8 @@ void Usuario::adicionarHistorico(const std::string& codigoLivro, const std::stri
 int main() {
     
 	bibliotecario.cadastrarUsuario(usuario);
-    bibliotecario bibliotecario;
-    bibliotecario.cadastrarLivro(acervo);
+    	bibliotecario bibliotecario;
+    	bibliotecario.cadastrarLivro(acervo);
 	bibliotecario.realizarEmprestimo(acervo, controleEmprestimo, usuario);
 	bibliotecario.realizarPesquisa(acervo, usuario, pesquisa);
 	controleAcervo.armazenarLivro(livro);
