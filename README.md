@@ -735,9 +735,12 @@ int main() {
 //ControleAcervo//
 
     // Criando um objeto do ControleAcervo
-    ControleAcervo acervo;
-    acervo.armazenarLivro(livro1);
-    acervo.armazenarLivro(livro2);
+	ControleAcervo controleAcervo;
+	controleAcervo.armazenarLivro(livro1);
+	controleAcervo.armazenarLivro(livro2);
+	controleAcervo.armazenarLivro(livro3);
+	controleAcervo.armazenarLivro(livro4);
+	controleAcervo.armazenarLivro(livro5);
 
     // Exemplo de busca de livro por código
     Livro livroEncontrado = acervo.buscarLivroPorCodigo("123ABC");
