@@ -386,6 +386,8 @@ void ControleEmprestimo::gerarComprovanteDeDevolucao(const Livro& livro, const U
 
 ### Classe Livro
 
+A Classe Livro é uma parte essencial do nosso projeto de Sistema de Biblioteca. Ela representa as informações fundamentais de um livro em nosso acervo. Cada instância da Classe Livro contém dados como código, título, autor, edição, editora, sinopse, número de páginas e gênero.
+
 `Livro.hpp`
 
 ```c++
