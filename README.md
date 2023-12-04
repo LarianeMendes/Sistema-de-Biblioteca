@@ -46,6 +46,7 @@ public:
 };
 
 #endif // `BIBLIOTECARIO.CPP`
+```
 
 `bibliotecario.cpp`
 
