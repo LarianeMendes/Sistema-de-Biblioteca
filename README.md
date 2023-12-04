@@ -560,6 +560,7 @@ public:
 
 `Pesquisa.cpp`
 
+```c++
 #include "Pesquisa.hpp"
 
 std::vector<Livro> Pesquisa::pesquisarPorTitulo(const std::string& titulo, const ControleAcervo& controleAcervo) const {
@@ -576,6 +577,7 @@ std::vector<Livro> Pesquisa::pesquisarPorGenero(const std::string& genero, const
     // Lógica para pesquisar por gênero
     return controleAcervo.pesquisarPorGenero(genero);
 }
+```
 
 ### Classe Usuário
 
