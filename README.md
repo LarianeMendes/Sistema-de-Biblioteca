@@ -133,6 +133,28 @@ void Bibliotecario::realizarDevolucao(ControleAcervo &acervo, ControleEmprestimo
     std::cout << "Devolução realizada com sucesso!" << std::endl;
 }
 ```
+`teste_bibliotecario.cpp`
+
+```c++
+
+#include <gtest/gtest.h>
+#include "Bibliotecario.hpp"
+
+TEST(BibliotecarioTest, RealizarDevolucaoComProblema) {
+    Bibliotecario bibliotecario;
+    Usuario usuario;
+    Livro livro;
+    Emprestimo emprestimo;
+    bibliotecario.realizarEmprestimo(emprestimo, livro, usuario);
+
+    // Realiza a devolução com um problema
+    bibliotecario.realizarDevolucao(emprestimo, "Livro danificado");
+
+    // Verifica se o livro foi devolvido corretamente com o problema registrado
+    EXPECT_TRUE(emprestimo.devolvido);
+    EXPECT_EQ(emprestimo.problemaDevolucao, "Livro danificado");
+}
+```
 
 ### Classe Controle de Acervo
 
@@ -273,6 +295,52 @@ void ControleAcervo::realizarPesquisaPorAutor(const std::string& autor) const {
     }
 }
 ```
+`teste_acervo_pesquisa.cpp`
+
+```c++
+#include <gtest/gtest.h>
+#include "Bibliotecario.hpp"
+
+TEST(AcervoTest, AdicionarLivroAoAcervo) {
+    Bibliotecario bibliotecario;
+    Livro livro;
+
+    bibliotecario.cadastrarLivro(livro);
+
+    // Verifica se o livro foi adicionado ao acervo
+    EXPECT_TRUE(/* condição de verificação */);
+}
+
+TEST(AcervoTest, PesquisarLivroPorTitulo) {
+    Bibliotecario bibliotecario;
+    Livro livro;
+    livro.adicionarInformacoes("Senhor dos Anéis", "J.R.R. Tolkien", "1ª Edição", "Editora ABC", "Fantasia", "Uma grande jornada...", 500);
+
+    bibliotecario.cadastrarLivro(livro);
+
+    // Pesquisa pelo livro no acervo
+    Livro livroEncontrado = bibliotecario.pesquisarLivro("Senhor dos Anéis");
+
+    // Verifica se o livro foi encontrado corretamente
+    EXPECT_EQ(livroEncontrado.getTitulo(), "Senhor dos Anéis");
+    // Adicione verificações para outras informações...
+}
+
+TEST(AcervoTest, PesquisarLivroPorAutor) {
+    Bibliotecario bibliotecario;
+    Livro livro;
+    livro.adicionarInformacoes("O Hobbit", "J.R.R. Tolkien", "1ª Edição", "Editora XYZ", "Fantasia", "Uma jornada inesperada...", 300);
+
+    bibliotecario.cadastrarLivro(livro);
+
+    // Pesquisa pelo livro no acervo
+    Livro livroEncontrado = bibliotecario.pesquisarLivroPorAutor("J.R.R. Tolkien");
+
+    // Verifica se o livro foi encontrado corretamente
+    EXPECT_EQ(livroEncontrado.getTitulo(), "O Hobbit");
+    // Adicione verificações para outras informações...
+}
+```
 
 ### Classe Controle de Empréstimo
 
@@ -395,6 +463,30 @@ void ControleEmprestimo::gerarComprovanteDeDevolucao(const Livro& livro, const U
     std::cout << "Livro: " << livro.getTitulo() << "\n";
     std::cout << "Usuário: " << usuario.getNomeUsuario() << "\n";
     std::cout << "Data de Devolução: " << getCurrentDate() << "\n"; // Implemente uma função para obter a data atual
+}
+```
+`teste_emprestimo.cpp`
+
+```c++
+#include <gtest/gtest.h>
+#include "Emprestimo.hpp"
+
+TEST(EmprestimoTest, CalcularDataDevolucao) {
+    Emprestimo emprestimo;
+    emprestimo.registrarEmprestimo("L123", "U456");
+
+    // Verifica se a data de devolução foi calculada corretamente
+    // Implemente as verificações conforme necessário
+    EXPECT_TRUE(/* condição de verificação */);
+}
+
+TEST(EmprestimoTest, RenovarEmprestimoAposDataLimite) {
+    Emprestimo emprestimo;
+    emprestimo.registrarEmprestimo("L123", "U456");
+
+    // Simula a passagem do tempo para além da data de devolução
+    // Implemente as verificações conforme necessário
+    EXPECT_FALSE(emprestimo.podeRenovar());
 }
 ```
 
@@ -534,6 +626,33 @@ void exibirResultados(const std::vector<Livro>& resultados) {
     }
 }
 ```
+`teste_livro.cpp`
+
+```c++
+#include <gtest/gtest.h>
+#include "Livro.hpp"
+
+TEST(LivroTest, AdicionarLivro) {
+    Livro livro;
+    livro.adicionarInformacoes("Senhor dos Anéis", "J.R.R. Tolkien", "1ª Edição", "Editora ABC", "Fantasia", "Uma grande jornada...", 500);
+
+    // Verifica se as informações foram adicionadas corretamente
+    EXPECT_EQ(livro.getTitulo(), "Senhor dos Anéis");
+    // Adicione verificações para outras informações...
+}
+
+TEST(LivroTest, AtualizarInformacoes) {
+    Livro livro;
+    livro.adicionarInformacoes("Senhor dos Anéis", "J.R.R. Tolkien", "1ª Edição", "Editora ABC", "Fantasia", "Uma grande jornada...", 500);
+
+    // Atualiza as informações do livro
+    livro.atualizarInformacoes("Senhor dos Anéis", "J.R.R. Tolkien", "2ª Edição", "Nova Editora", "Fantasia Épica", "Uma jornada épica...", 600);
+
+    // Verifica se as informações foram atualizadas corretamente
+    EXPECT_EQ(livro.getEdicao(), "2ª Edição");
+    // Adicione verificações para outras informações...
+}
+```
 
 ### Classe Pesquisa
 
@@ -649,6 +768,34 @@ void Usuario::mostrarHistorico() const {
 
 void Usuario::adicionarHistorico(const std::string& codigoLivro, const std::string& dataEmprestimo) {
     historicoEmprestimos.push_back(std::make_pair(codigoLivro, dataEmprestimo));
+}
+```
+`teste_usuario.cpp`
+
+```c++
+#include <gtest/gtest.h>
+#include "Usuario.hpp"
+
+TEST(UsuarioTest, RenovarEmprestimoInexistente) {
+    Usuario usuario;
+    Emprestimo emprestimo;
+    usuario.historicoEmprestimos.push_back(emprestimo);
+
+    // Tenta renovar um empréstimo que não existe
+    usuario.renovarEmprestimo("CodigoInvalido");
+
+    // Verifica se o empréstimo não foi renovado
+    EXPECT_FALSE(emprestimo.podeRenovar());
+}
+
+TEST(UsuarioTest, ExibirHistoricoVazio) {
+    Usuario usuario;
+
+    // Verifica se o histórico é exibido corretamente quando vazio
+    testing::internal::CaptureStdout();
+    usuario.exibirHistorico();
+    std::string output = testing::internal::GetCapturedStdout();
+    EXPECT_TRUE(output.empty());
 }
 ```
 
