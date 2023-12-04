@@ -795,32 +795,27 @@ int main() {
     usuario.mostrarHistorico();
 
     return 0;
+#include "Pesquisa.hpp"
+#include <iostream>
+#include <vector>
 
-//Pesquisa//
+// Função auxiliar para exibir resultados da pesquisa
+void exibirResultados(const std::vector<Livro>& resultados);
 
-void exibirResultados(const std::vector<Livro>& resultados){
-	std::vector<Livro> resultados; 
-    exibirResultados(resultados);
-	
-	for (const auto& livro : resultados) {
-		std::cout << "Título: " << livro.getTitulo() << std::endl;
-	}
-	
+int main() {
     // Criar objeto ControleAcervo e adicionar os livros ao acervo
-	ControleAcervo controleAcervo;
-	controleAcervo.armazenarLivro(livro1);
-	controleAcervo.armazenarLivro(livro2);
-	controleAcervo.armazenarLivro(livro3);
-	controleAcervo.armazenarLivro(livro4);
-	controleAcervo.armazenarLivro(livro5);
-	controleAcervo.armazenarLivro(livro6);
-	controleAcervo.armazenarLivro(livro7);
-	controleAcervo.armazenarLivro(livro8);
-	controleAcervo.armazenarLivro(livro9);
-	controleAcervo.armazenarLivro(livro10);
-	controleAcervo.armazenarLivro(livro11);
-
- 
+    ControleAcervo controleAcervo;
+    controleAcervo.armazenarLivro(livro1);
+    controleAcervo.armazenarLivro(livro2);
+    controleAcervo.armazenarLivro(livro3);
+    controleAcervo.armazenarLivro(livro4);
+    controleAcervo.armazenarLivro(livro5);
+    controleAcervo.armazenarLivro(livro6);
+    controleAcervo.armazenarLivro(livro7);
+    controleAcervo.armazenarLivro(livro8);
+    controleAcervo.armazenarLivro(livro9);
+    controleAcervo.armazenarLivro(livro10);
+    controleAcervo.armazenarLivro(livro11);
 
     // Criar objeto Pesquisa
     Pesquisa pesquisa;
@@ -840,6 +835,7 @@ void exibirResultados(const std::vector<Livro>& resultados){
 
     return 0;
 }
+
 // Função auxiliar para exibir resultados da pesquisa
 void exibirResultados(const std::vector<Livro>& resultados) {
     if (resultados.empty()) {
@@ -850,6 +846,4 @@ void exibirResultados(const std::vector<Livro>& resultados) {
         }
     }
 }
-	return 0;
-}
-```
+
