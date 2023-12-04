@@ -47,7 +47,7 @@ public:
 
 #endif // `BIBLIOTECARIO.CPP`
 
-`Bibliotecario.cpp`
+`bibliotecario.cpp`
 
 ```c++
 
