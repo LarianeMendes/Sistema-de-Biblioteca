@@ -276,6 +276,7 @@ A classe Controle de Empréstimo, assim, desempenha um papel crucial na garantia
 
 `ControleEmprestimo.hpp`
 
+```c++
 #ifndef CONTROLEEMPRESTIMO_HPP
 #define CONTROLEEMPRESTIMO_HPP
 
@@ -299,7 +300,7 @@ public:
 };
 
 #endif // CONTROLEEMPRESTIMO_HPP
-
+```
 
 `ControleEmprestimo.cpp`
 
@@ -398,6 +399,8 @@ void ControleEmprestimo::gerarComprovanteDeDevolucao(const Livro& livro, const U
 A Classe Livro é uma parte essencial do nosso projeto de Sistema de Biblioteca. Ela representa as informações fundamentais de um livro em nosso acervo. Cada instância da Classe Livro contém dados como código, título, autor, edição, editora, sinopse, número de páginas e gênero.
 
 `Livro.hpp`
+
+```c++
 #ifndef LIVRO_HPP
 #define LIVRO_HPP
 
@@ -440,6 +443,7 @@ public:
 };
 
 #endif
+```
 
 `Livro.cpp`
 
