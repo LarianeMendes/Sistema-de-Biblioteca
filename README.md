@@ -265,7 +265,6 @@ A classe Controle de Empréstimo, assim, desempenha um papel crucial na garantia
 
 `ControleEmprestimo.hpp`
 
-```c++
 #ifndef CONTROLEEMPRESTIMO_HPP
 #define CONTROLEEMPRESTIMO_HPP
 
@@ -289,7 +288,6 @@ public:
 };
 
 #endif // CONTROLEEMPRESTIMO_HPP
-```
 
 
 `ControleEmprestimo.cpp`
