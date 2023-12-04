@@ -1018,4 +1018,4 @@ void exibirResultados(const std::vector<Livro>& resultados) {
         }
     }
 }
-```
+
