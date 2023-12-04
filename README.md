@@ -17,7 +17,7 @@ A experiência do usuário é aprimorada pela interface amigável, possibilitand
 ## Classes do Projeto.
 A incumbência da classe Bibliotecário consiste em administrar as operações inerentes a uma biblioteca, dispondo de métodos destinados ao cadastramento, atualização, empréstimo, devolução e pesquisa de livros e usuários.
 
-### Classe Bibliotecário.
+### Classe Bibliotecário
 
 No contexto da Classe Bibliotecário, as funcionalidades de cadastro de livros e de usuários proporcionam ao bibliotecário a capacidade de inserir novas informações no acervo da biblioteca. Da mesma forma, os métodos destinados à atualização de informações tanto de livros quanto de usuários conferem a flexibilidade necessária para que o bibliotecário efetue modificações quando julgar pertinente. No âmbito do gerenciamento de empréstimos, as funções de realizar empréstimo e devolução capacitam o bibliotecário a administrar eficientemente o fluxo de circulação de livros na biblioteca.
 
