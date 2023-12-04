@@ -522,15 +522,14 @@ Uma Classe Pesquisa é uma parte essencial do nosso sistema de biblioteca, ofere
 
 `Pesquisa.hpp`
 
-```c++
 #ifndef PESQUISA_HPP
 #define PESQUISA_HPP
 
 #include <string>
 #include <iostream>
 #include <vector>
-#include "Livro.hpp"  
-#include "ControleAcervo.hpp" 
+#include "Livro.hpp"
+#include "ControleAcervo.hpp"
 
 class Pesquisa {
 public:
