@@ -631,9 +631,6 @@ void Usuario::adicionarHistorico(const std::string& codigoLivro, const std::stri
 
 ## MAIN
 
-`main.cpp`
-
-```c++
 #include "Bibliotecario.hpp"
 #include "Livro.hpp"
 #include "ControleAcervo.hpp"
@@ -643,18 +640,16 @@ void Usuario::adicionarHistorico(const std::string& codigoLivro, const std::stri
 #include <iostream>
 #include <vector>
 
-//Bibliotecario//
-
 int main() {
-    
-	bibliotecario.cadastrarUsuario(usuario);
-    	bibliotecario bibliotecario;
-    	bibliotecario.cadastrarLivro(acervo);
-	bibliotecario.realizarEmprestimo(acervo, controleEmprestimo, usuario);
-	bibliotecario.realizarPesquisa(acervo, usuario, pesquisa);
-	controleAcervo.armazenarLivro(livro);
+    // Declarar e inicializar objetos
+    Bibliotecario bibliotecario;
+    Usuario usuario("NomeUsuario", "Senha123", "usuario@email.com");
+    ControleAcervo acervo;
+    ControleEmprestimo controleEmprestimo;
+    Pesquisa pesquisa;
+    ControleAcervo controleAcervo;
 
-    // Adicionando um exemplo de cadastro de usuário
+    // Adicionar um exemplo de cadastro de usuário
     bibliotecario.cadastrarUsuario(usuario);
 
     // Exemplo de realização de empréstimo
@@ -666,8 +661,11 @@ int main() {
     // Exemplo de realização de pesquisa
     bibliotecario.realizarPesquisa(acervo, usuario, pesquisa);
 
-    return 0;
+    // Adicionando um exemplo de armazenamento de livro
+    controleAcervo.armazenarLivro(Livro("Codigo123", "TituloLivro", "AutorLivro", "Edicao1", "EditoraXYZ", "Sinopse...", 200, "Ficcao"));
 
+    return 0;
+}
 
 //Livro//
 
