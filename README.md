@@ -15,7 +15,7 @@ A experiência do usuário é aprimorada pela interface amigável, possibilitand
 
 
 ## Classes do Projeto
-A classe Bibliotecario é responsável por gerenciar as operações de uma biblioteca. Ela fornece métodos para cadastrar, atualizar, emprestar, devolver e pesquisar livros e usuários.
+A incumbência da classe Bibliotecário consiste em administrar as operações inerentes a uma biblioteca, dispondo de métodos destinados ao cadastramento, atualização, empréstimo, devolução e pesquisa de livros e usuários.
 
 ### Classe Bibliotecário
 
