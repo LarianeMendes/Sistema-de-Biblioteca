@@ -1,4 +1,4 @@
-# Sistema de Biblioteca
+# Sistema de Biblioteca. 
 Um Sistema de Biblioteca desempenha um papel crucial no universo acadêmico, promovendo o acesso à informação e facilitando a busca por conhecimento. Essas plataformas digitais, como o sistema que desenvolvemos no projeto, representam o coração pulsante das instituições educacionais, conectando alunos, professores e entusiastas do aprendizado.
 
 A parte central desse sistema, está o Controle de Acervo, responsável por gerenciar a vasta coleção de recursos educacionais disponíveis. Cada livro, representado por instâncias da classe Livro, guarda consigo não apenas páginas impressas, mas um mundo de ideias, histórias e conceitos. Os livros são catalogados, armazenados e disponibilizados para empréstimos, permitindo que os usuários explorem diferentes áreas do conhecimento.
