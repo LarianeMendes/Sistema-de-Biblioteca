@@ -583,6 +583,7 @@ std::vector<Livro> Pesquisa::pesquisarPorGenero(const std::string& genero, const
 
 A Classe Usuário desempenha um papel essencial no contexto do nosso sistema de biblioteca. Esta classe é responsável por representar os usuários que interagem com a biblioteca, como alunos, professores ou qualquer pessoa que deseje utilizar os serviços oferecidos.
 
+```c++
 #ifndef USUARIO_HPP
 #define USUARIO_HPP
 
@@ -609,7 +610,7 @@ public:
 };
 
 #endif
-
+```
 
 `Usuario.cpp`
 
