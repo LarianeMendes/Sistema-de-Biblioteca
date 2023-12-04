@@ -19,7 +19,7 @@ A classe Bibliotecario é responsável por gerenciar as operações de uma bibli
 
 ### Classe Bibliotecário
 
-Na Classe Bibliotecário, os métodos de cadastro de livro e cadastro de usuário possibilitam ao bibliotecário inserir novas informações no acervo da biblioteca. Da mesma forma, os métodos para atualizar informações do livro e do usuário oferecem a flexibilidade necessária para que o bibliotecário faça modificações quando necessário. No âmbito de gerenciamento de empréstimos, os métodos de fazer empréstimo e fazer devolução capacitam o bibliotecário a administrar eficientemente a circulação de livros.
+No contexto da Classe Bibliotecário, as funcionalidades de cadastro de livros e de usuários proporcionam ao bibliotecário a capacidade de inserir novas informações no acervo da biblioteca. Da mesma forma, os métodos destinados à atualização de informações tanto de livros quanto de usuários conferem a flexibilidade necessária para que o bibliotecário efetue modificações quando julgar pertinente. No âmbito do gerenciamento de empréstimos, as funções de realizar empréstimo e devolução capacitam o bibliotecário a administrar eficientemente o fluxo de circulação de livros na biblioteca.
 
 `bibliotecario.hpp`
 
