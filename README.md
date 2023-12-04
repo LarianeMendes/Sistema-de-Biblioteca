@@ -650,6 +650,7 @@ void Usuario::adicionarHistorico(const std::string& codigoLivro, const std::stri
 
 ## MAIN
 
+```c++
 #include "Bibliotecario.hpp"
 #include "Livro.hpp"
 #include "ControleAcervo.hpp"
@@ -865,3 +866,4 @@ void exibirResultados(const std::vector<Livro>& resultados) {
         }
     }
 }
+```
