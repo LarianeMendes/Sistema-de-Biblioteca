@@ -47,6 +47,10 @@ public:
 
 #endif // `BIBLIOTECARIO.CPP`
 
+`Bibliotecario.cpp`
+
+```c++
+
 #include "Bibliotecario.hpp"
 #include "ControleEmprestimo.hpp"
 #include "Pesquisa.hpp"
